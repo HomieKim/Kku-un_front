@@ -7,7 +7,7 @@ const useLayout = (): pageLayout => {
   if (pathname === '/') {
     return {...layout, noNav:true};
   } else if (pathname === '/main') {
-    return { ...layout, header: true };
+    return { ...layout, header: true, hasBack:true };
   } else if (pathname === '/profile') {
     return { ...layout, header: true, noNav: true };
   }
